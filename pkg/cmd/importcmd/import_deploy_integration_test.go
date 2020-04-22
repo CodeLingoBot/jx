@@ -26,7 +26,6 @@ import (
 )
 
 func TestImportProjectNextGenPipelineWithDeploy(t *testing.T) {
-	t.Parallel()
 	originalJxHome, tempJxHome, err := testhelpers.CreateTestJxHomeDir()
 	assert.NoError(t, err)
 	defer func() {

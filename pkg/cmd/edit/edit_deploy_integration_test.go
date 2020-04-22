@@ -22,7 +22,6 @@ import (
 )
 
 func TestCmdEditDeploy(t *testing.T) {
-	t.Parallel()
 
 	srcDir := filepath.Join("test_data", "edit_deploy", "testapp")
 	require.DirExists(t, srcDir)

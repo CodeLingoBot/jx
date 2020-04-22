@@ -23,7 +23,6 @@ import (
 )
 
 func TestStepVerifyRequirements(t *testing.T) {
-	t.Parallel()
 
 	tempDir, err := ioutil.TempDir("", "test-step-verify-requirements")
 	require.NoError(t, err)

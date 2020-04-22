@@ -205,8 +205,6 @@ func TestStepVerifyPreInstallSetClusterRequirementsViaEnvars(t *testing.T) {
 	err = options.VerifyInstallConfig(kc, origNamespace, config.NewRequirementsConfig(), "")
 	assert.NoErrorf(t, err, "the command should not have failed as we should have lazily created the deploy namespace")
 
-	t.Parallel()
-
 	commonOpts := opts.CommonOptions{
 		BatchMode: false,
 	}
